@@ -1,7 +1,22 @@
 # instructure-ui-esm-vitest-demo
 This project demonstrates how to use ECMAScript Modules (ESM) with React and Vitest for testing, specifically focusing on integrating and using the ESM version of the Instructure UI components.
 
-# Getting Started with Create React App
+## Test ESM usage
+After `npm install` add console.log to both file in node_modules to see wich one is loaded:
+ESM: node_modules/@instructure/ui-buttons/es/Button/index.js
+CJS: node_modules/@instructure/ui-buttons/lib/Button/index.js
+
+Run the scripts:
+`npm run test:vitest`
+`npm run start`
+
+## Update configuration to use ESM modules:
+
+- Added type: "module" to package.json
+- Renamed files to .jsx and .mjs for ESM support
+- Updated import paths to include file extensions
+- Configured Vitest to use ESM versions of dependencies
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
